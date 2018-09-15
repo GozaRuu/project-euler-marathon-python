@@ -15,7 +15,7 @@ def sol_1():
     print res
 
 
-#solution_2 O(N) much faster
+#solution_2 O(N/2) much faster (write b with a and c to get rid of it as a loop)
 def sol_2():
     n = 1000
     a = 1 ; c = 0
@@ -27,5 +27,7 @@ def sol_2():
             res = max(res, abc)
         a += 1
     print res
+
+#solution3 O(N) same as sol2 but writter with a generator
 
 sol_2()
