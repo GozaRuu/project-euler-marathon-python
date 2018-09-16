@@ -1,5 +1,5 @@
 # project-euler-marathon-python
-Solutions to the (projecteuler.net) programming marathon.
+Solutions to the [Project Euler](https://projecteuler.net) programming marathon.
 
 Also solving ProjectEuler+ at [HackerRank](https://www.hackerrank.com/contests/projecteuler/challenges) in the same time (same problems with multiple test cases and stricter time limits
 
