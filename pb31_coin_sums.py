@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+#A+ problem !!!
+#great Dynamic Programming problem especially the HackerRank version with extreme boundries
+#This wiki page explains the core idea that I implemented here after experimenting with a bunch of bad ideas
+#http://www.algorithmist.com/index.php/Coin_Change
+
 mod = 10**9 + 7
 coins = [1, 2, 5, 10, 20, 50, 100, 200]
 memo = [[-1 for i in xrange(8)] for j in xrange(100005)]
