@@ -49,3 +49,25 @@ def sum_squares(n):
 #sum i**3 i in 1, 2..n
 def sum_cubes(n):
     return n**2 * (n + 1)**2  // 4
+
+#write an int in base 10 in a different base, base is a string constructed
+#by the characters you need in your base ( eg. base 2: '01', base 8: '01234567', custom base: 'helwivgf')
+def str_base(number, base):
+    (d,m) = divmod(number,len(base))
+    if d > 0: return str_base(d,base) + base[m]
+    return base[m]
+
+
+#checks if integer n is a palindrom
+def is_palindrom(n):
+    n = str(n)
+    m = len(n)//2
+    if len(n) % 2 == 0:
+        n_1 = n[:m]
+        n_2 = n[m:]
+        if n_1 == n_2[::-1] : return True
+    else :
+        n_1 = n[:m]
+        n_2 = n[m+1:]
+        if n_1 == n_2[::-1] : return True
+    return False
